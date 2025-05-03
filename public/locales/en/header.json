@@ -1,0 +1,30 @@
+{
+    "request-call": "Request call",
+    "delivery": "Pasta delivery",
+    "moscow": "Moscow",
+    "yandex-food": "Yandex food",
+    "delivery-time": "Delivery time",
+    "time-from": "from 31 min",
+    "card": "Cart",
+    "pizza": "Pizza",
+    "pasta": "Pasta",
+    "soups": "Soups",
+    "salads": "Salads",
+    "drinks": "Drinks",
+    "promotions": "Promotions",
+    "contacts": "Contacts",
+    "favorites": "Favorites",
+    "new_arrivals": "New Arrivals",
+    "our": "Our",
+    "all_promotions": "All Promotions",
+    "payment_and_delivery": "Payment and Delivery",
+    "oops": "Oops! Looks like you're lost.",
+    "letUsGetYouBack": "Let's get you back",
+    "home": "home",
+    "add_to_cart": "Add to cart",
+        "remove": "Remove",
+        "total": "Total",
+        "cart_empty": "Your cart is empty."
+      
+      
+}
