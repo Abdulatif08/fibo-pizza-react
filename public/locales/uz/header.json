@@ -21,5 +21,12 @@
     "oops": "Oops! Ko'rinadi, siz yo'qolganingiz.",
     "letUsGetYouBack": "Keling, sizni qaytaramiz",
     "home": "Bosh sahifa",
-      "add_to_cart": "Savatga qo‘shish"
+    "add_to_cart": "Savatga qo'shish",
+    "remove": "O'chirish",
+    "total": "Jami",
+    "cart": "Savat",
+    "cart_empty": "Savatingiz bo'sh.",
+    "empty_cart_message": "Savatingiz hozirda bo'sh. Boshlash uchun mazali taomlar qo'shing!",
+    "product_added_to_cart": "Mahsulot muvaffaqiyatli savatga qo'shildi!",
+    "product_already_in_cart": "Bu mahsulot allaqachon savatingizda!"
 }

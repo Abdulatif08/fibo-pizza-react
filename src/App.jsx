@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -19,30 +19,30 @@ import Dessert from './pages/Dessert';
 import Stock from './pages/Stock';
 import Location from './pages/Location';
 import Favorites from './pages/Favorites';
-import Card from './pages/Card';
+import Cart from './pages/Cart';
 
 import 'react-toastify/dist/ReactToastify.css';
-import { addCard } from './store/slices/cardSlice';
+import { addToCart } from './store/slices/cartSlice';
 
 const App = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const currentLanguage = i18n.language;
-  const cartItems = useSelector((state) => state.card.data);
+
+  const cartItems = useSelector((state) => state.cart.data);
 
   const handleAddToCart = (item) => {
     const found = cartItems.some(i => i.id === item.id);
     if (!found) {
-      dispatch(addCard(item));
-      toast.success(`Muvaffaqiyatli qo'shildi!`, {
+      dispatch(addToCart(item));
+      toast.success(t('product_added_to_cart'), {
         position: "bottom-right",
         autoClose: 3000,
         theme: "light",
       });
     } else {
-      toast.info(`Bu mahsulot oldin qo'shilgan!`, {
+      toast.info(t('product_already_in_cart'), {
         position: "bottom-right",
         autoClose: 3000,
         theme: "light",
@@ -62,16 +62,16 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/pizza" element={<Pizza addToCard={handleAddToCart} />} />
-          <Route path="/beverages" element={<Beverages addToCard={handleAddToCart} />} />
-          <Route path="/dessert" element={<Dessert addToCard={handleAddToCart} />} />
-          <Route path="/paste" element={<Paste addToCard={handleAddToCart} />} />
-          <Route path="/salad" element={<Salads addToCard={handleAddToCart} />} />
-          <Route path="/soups" element={<Soups addToCard={handleAddToCart} />} />
+          <Route path="/pizza" element={<Pizza addToCart={handleAddToCart} />} />
+          <Route path="/beverages" element={<Beverages addToCart={handleAddToCart} />} />
+          <Route path="/dessert" element={<Dessert addToCart={handleAddToCart} />} />
+          <Route path="/paste" element={<Paste addToCart={handleAddToCart} />} />
+          <Route path="/salad" element={<Salads addToCart={handleAddToCart} />} />
+          <Route path="/soups" element={<Soups addToCart={handleAddToCart} />} />
           <Route path="/stock" element={<Stock />} />
           <Route path="/location" element={<Location />} />
           <Route path="/favorites" element={<Favorites />} />
-          <Route path="/card" element={<Card />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </main>
 
