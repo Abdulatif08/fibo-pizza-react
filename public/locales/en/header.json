@@ -22,9 +22,11 @@
     "letUsGetYouBack": "Let's get you back",
     "home": "home",
     "add_to_cart": "Add to cart",
-        "remove": "Remove",
-        "total": "Total",
-        "cart_empty": "Your cart is empty."
-      
-      
+    "remove": "Remove",
+    "total": "Total",
+    "cart": "Cart",
+    "cart_empty": "Your cart is empty.",
+    "empty_cart_message": "Your cart is currently empty. Add some delicious items to get started!",
+    "product_added_to_cart": "Product successfully added to cart!",
+    "product_already_in_cart": "This product is already in your cart!"
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { stock_data } from '../assets/stock/stock';
 import { useTranslation } from 'react-i18next';
 

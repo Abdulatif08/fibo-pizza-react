@@ -93,7 +93,7 @@ export const navLinksData = {
       { title: 'Salatlar', link: 'salad' },
       { title: 'Ichimliklar', link: 'beverages' },
       { title: 'Desertlar', link: 'dessert' },
-      { title: 'Aktsiyalar', link: 'stock' },,
+      { title: 'Aktsiyalar', link: 'stock' },
       { title: 'Joylashuv', link: 'Location' }
     ]
   };

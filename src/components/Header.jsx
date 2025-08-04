@@ -10,7 +10,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const currentLanguage = i18n.language;
   const { pathname } = useLocation();
-  const cardLength = useSelector((store) => store.card.data.length);
+  const cartLength = useSelector((store) => store.cart.data.length);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,8 +25,8 @@ const Header = () => {
     e.preventDefault();
   };
 
-  const toCard = () => {
-    navigate('/card');
+  const toCart = () => {
+    navigate('/cart');
   };
 
   const navLinks = navLinksData[currentLanguage] || navLinksData.en;
@@ -103,8 +103,8 @@ const Header = () => {
              <img className='mt-1 hover:text-white transition ' src={likeIcon} alt="ikeIcon" />
             </Link>
 
-            <button onClick={toCard} className="btn-yellow">
-              {t('card')} | {cardLength}
+            <button onClick={toCart} className="btn-yellow">
+              {t('card')} | {cartLength}
             </button>
           </div>
         </div>
@@ -132,8 +132,8 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <button onClick={toCard} className="font-semibold uppercase-text">
-                  {t('card')} | {cardLength}
+                <button onClick={toCart} className="font-semibold uppercase-text">
+                  {t('card')} | {cartLength}
                 </button>
               </li>
               <li>
